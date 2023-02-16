@@ -1,5 +1,7 @@
+import { env } from 'process';
+
 async function getMovies() {
-    const data = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=5b04841f2d7c4499c4a89e1dd286e67b')
+    const data = await fetch (`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`)
 
     return await data.json()
 }
