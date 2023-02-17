@@ -1,10 +1,9 @@
-import Movies from "./popularMovies";
-
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="xl:my-20 xl:mx-32 md:my-10 md:mx-20 m-5">
-      < Movies />
+    <div>
+      <Link href="/movies" className="text-blue-600 text-xl font-bold pt-24">Movies</Link>
     </div>
   )
 }
