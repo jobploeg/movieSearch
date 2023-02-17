@@ -1,14 +1,10 @@
-import { Suspense } from "react";
-import Loading from "./loading";
 import Movies from "./popularMovies";
 
 
 export default function Home() {
   return (
-    <div>
-      <Suspense fallback={<p>Loading...</p>}>
-        < Movies />
-      </Suspense>
+    <div className="xl:my-20 xl:mx-32 md:my-10 md:mx-20 m-5">
+      < Movies />
     </div>
   )
 }
